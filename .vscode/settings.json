@@ -1,0 +1,40 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.flashType": "UART",
+  "idf.portWin": "COM3",
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32"
+  },
+  "idf.openOcdConfigs": ["board/esp32-wrover-kit-3.3v.cfg"],
+  "files.associations": {
+    "*.ini": "ini",
+    "*.s": "platformio-debug.asm",
+    "i2c_master.h": "c",
+    "esp_lcd_st7796.h": "c",
+    "i2c.h": "c",
+    "esp_lcd_touch_ft5x06.h": "c",
+    "esp_lvgl_port.h": "c",
+    "adc_oneshot.h": "c",
+    "mq2.h": "c",
+    "freertos.h": "c",
+    "lvgl.h": "c",
+    "esp_lcd_panel_io.h": "c",
+    "*.tcc": "c",
+    "charconv": "c",
+    "chrono": "c",
+    "optional": "c",
+    "format": "c",
+    "ratio": "c",
+    "system_error": "c",
+    "array": "c",
+    "functional": "c",
+    "regex": "c",
+    "tuple": "c",
+    "type_traits": "c",
+    "utility": "c",
+    "dht11.h": "c",
+    "esp_event.h": "c",
+    "task.h": "c"
+  },
+  "vsmqtt.brokerProfiles": []
+}
