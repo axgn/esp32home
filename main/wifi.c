@@ -7,8 +7,11 @@
 
 #include <string.h>
 
-#define SSID "HUAWEI_CHUANGSHI"
-#define PASSWORD "12345678"
+// #define SSID "HUAWEI_CHUANGSHI"
+// #define PASSWORD "12345678"
+
+#define SSID "axgn1234"
+#define PASSWORD "xu123456"
 
 static const char *TAG = "wifi";
 

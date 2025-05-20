@@ -6,7 +6,7 @@
 #include "dht11.h"
 #include "umqtt.h"
 
-#define MQTT_HOST "mqtt://192.168.235.168"
+#define MQTT_HOST "mqtt://znjj.piedaochuan.top"
 #define MQTT_PORT 1883
 #define MQTT_CLIENT_ID "mqtt_esp32_123"
 #define MQTT_USERNAME "xiaozhi_anyizhijia"
@@ -92,8 +92,8 @@ void esp_mqtt_subscribe()
     esp_mqtt_client_subscribe_single(mqtt_handle, ESP32_REC_TIME_TOPIC, 1);
     esp_mqtt_client_subscribe_single(mqtt_handle, ESP32_REC_DATE_TOPIC, 1);
     esp_mqtt_client_subscribe_single(mqtt_handle, ESP32_REC_AQI_TOPIC, 1);
-    esp_mqtt_client_subscribe_single(mqtt_handle, ESP32_REC_HUMIDIFIER_TOPIC, 1);
-    esp_mqtt_client_subscribe_single(mqtt_handle, ESP32_REC_AIR_CONDITIONER_TOPIC, 1);
+    // esp_mqtt_client_subscribe_single(mqtt_handle, ESP32_REC_HUMIDIFIER_TOPIC, 1);
+    // esp_mqtt_client_subscribe_single(mqtt_handle, ESP32_REC_AIR_CONDITIONER_TOPIC, 1);
 }
 
 void deal_data(esp_mqtt_event_handle_t data)
