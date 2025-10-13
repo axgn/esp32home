@@ -6,11 +6,11 @@
 #include "dht11.h"
 #include "umqtt.h"
 
-#define MQTT_HOST "mqtt://znjj.piedaochuan.top"
+#define MQTT_HOST "MQTT_HOST"
 #define MQTT_PORT 1883
 #define MQTT_CLIENT_ID "mqtt_esp32_123"
-#define MQTT_USERNAME "xiaozhi_anyizhijia"
-#define MQTT_PASSWORD "123456"
+#define MQTT_USERNAME "MQTT_USERNAME"
+#define MQTT_PASSWORD "MQTT_PASSWORD"
 
 #define ESP32_PUB_TEMPERATURE_TOPIC "esp32/temperature"
 #define ESP32_PUB_HUMIDITY_TOPIC "esp32/humidity"
