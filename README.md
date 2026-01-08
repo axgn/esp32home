@@ -14,10 +14,6 @@
 - LED 灯带（WS2812）：初始化 [`init_ws2812`](main/main.c)（实现见 [main/main.c](main/main.c)）
 - 任务/队列初始化：[`init_queue`](main/main.c)（见 [main/main.c](main/main.c)）
 
-LVGL 字体与资源：
-- 中文字体资源（示例）：[main/font/lvgl_font_siyuan_20.c](main/font/lvgl_font_siyuan_20.c), [main/font/lvgl_font_siyuan_22.c](main/font/lvgl_font_siyuan_22.c), [main/font/lvgl_font_siyuan_26.c](main/font/lvgl_font_siyuan_26.c)
-- LVGL 初始化：[`lvgl_init.h`](main/lvgl_init.h)（如有）和 [main/ui.c](main/ui.c)
-
 第三方组件：
 - FT5x06 触摸驱动组件：实现与示例见 [components/espressif__esp_lcd_touch_ft5x06/esp_lcd_touch_ft5x06.c](components/espressif__esp_lcd_touch_ft5x06/esp_lcd_touch_ft5x06.c) 与说明 [components/espressif__esp_lcd_touch_ft5x06/README.md](components/espressif__esp_lcd_touch_ft5x06/README.md)
 
@@ -32,11 +28,6 @@ LVGL 字体与资源：
    ```sh
    idf.py -p <PORT> flash monitor
    ```
-
-调试与注意事项：
-- 串口配置、Flash 与芯片目标等在 [sdkconfig](sdkconfig) 中定义；常见项如 `CONFIG_ESPTOOLPY_FLASHFREQ`、`CONFIG_ESPTOOLPY_FLASHSIZE` 等可参考。
-- 分区（OTA / NVS / phy_init）由 [partitions.csv](partitions.csv) 定义。
-- 若修改 LVGL 配置或字体，请检查 [main/CMakeLists.txt](main/CMakeLists.txt) 中的注册项（字体/图片打包）。
 
 常见入口与帮助：
 - 查看主任务启动与任务创建：[main/main.c](main/main.c)
